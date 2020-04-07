@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 
-import logo from '../img/algostrata_.png';
+import logo from '../img/algostratanobg.png';
 import facebook from '../img/social/facebook.svg';
 import instagram from '../img/social/instagram.svg';
 import twitter from '../img/social/twitter.svg';

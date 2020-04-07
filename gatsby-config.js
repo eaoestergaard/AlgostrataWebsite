@@ -3,7 +3,7 @@ var proxy = require ('http-proxy-middleware');
 module.exports = {
   siteMetadata: {
     title: 'ALGOSTRATA',
-    description: 'Hjemmeside for virksomheden ALGOSTRATA, som står bag Financielt CV',
+    description: 'Hjemmeside for virksomheden ALGOSTRATA',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
