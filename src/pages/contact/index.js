@@ -1,45 +1,47 @@
-import React from 'react'
-import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
+import React from 'react';
+import {navigate} from 'gatsby-link';
+import Layout from '../../components/Layout';
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+function encode (data) {
+  return Object.keys (data)
+    .map (
+      key => encodeURIComponent (key) + '=' + encodeURIComponent (data[key])
+    )
+    .join ('&');
 }
 
 export default class Index extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isValidated: false }
+  constructor (props) {
+    super (props);
+    this.state = {isValidated: false};
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+    this.setState ({[e.target.name]: e.target.value});
+  };
 
   handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
+    e.preventDefault ();
+    const form = e.target;
+    fetch ('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: encode ({
+        'form-name': form.getAttribute ('name'),
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
-  }
+      .then (() => navigate (form.getAttribute ('action')))
+      .catch (error => alert (error));
+  };
 
-  render() {
+  render () {
     return (
       <Layout>
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>CONTACT</h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +60,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    NAME
                   </label>
                   <div className="control">
                     <input
@@ -101,15 +103,16 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <a className="btn" type="submit">
                     Send
-                  </button>
+                  </a>
+
                 </div>
               </form>
             </div>
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }

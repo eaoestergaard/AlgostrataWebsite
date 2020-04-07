@@ -1,0 +1,91 @@
+:root {
+	--source: #006491;
+	--primary: var(--source);
+	--primary-faded: #43b9b755;
+	--primary-transparent: #43b9b700;
+    --skew: 0deg;
+    --background:var(--source);
+}
+
+/* Transition Styles */
+
+.wave-content-wrapper{
+    background-color: var(--background);
+    width: 100%;
+}
+.wave-section{
+	padding: 10px;
+}
+.main-header{
+	color: white !important;
+	margin-bottom: 10px;
+	font-size: 2.0rem;
+}
+.wave-button{
+	width:100px;
+	margin-bottom:15px;
+}
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	.main-header {
+		font-size: 1.0rem;
+	}
+	.wave-button{
+		width:70px;
+		font-size: 0.8rem !important;
+	}
+  }
+@keyframes move_wave {
+	0% {
+		transform: translateX(-50%) translateY(10%) translateZ(0) scaleY(0.8);
+	}
+	25% {
+		transform: translateX(-37.5%) translateY(17.5%) translateZ(0)
+			scaleY(0.6);
+	}
+	50% {
+		transform: translateX(-25%) translateY(25%) translateZ(0) scaleY(0.8);
+	}
+	75% {
+		transform: translateX(-12.5%) translateY(17.5%) translateZ(0)
+			scaleY(0.6);
+	}
+	100% {
+		transform: translateX(0) translateY(10%) translateZ(0) scaleY(0.8);
+	}
+}
+
+@keyframes jump {
+	20% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: scale(1.2) rotate(10deg);
+	}
+
+	80% {
+		transform: scale(1.2) rotate(-10deg);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+}
+/* End Transition Styles */
