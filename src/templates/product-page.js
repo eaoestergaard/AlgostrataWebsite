@@ -38,19 +38,6 @@ export const ProductPageTemplate = ({
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} config={{rows: 4}} />
-              <div className="columns">
-                <div className="column is-12 has-text-centered">
-                  <a
-                    className="btn"
-                    href="https://www.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    VISIT GOOGLE
-                  </a>
-                </div>
-              </div>
               <div style={sectionStyle}>
                 <div className="columns">
                   <div className="column is-7">
@@ -58,41 +45,58 @@ export const ProductPageTemplate = ({
                       {main.heading}
                     </h3>
                     <p>{main.description}</p>
+                    <div className="column is-7">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image1} />
+                      </article>
+                    </div>
+                    <div className="column is-7">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image2} />
+                      </article>
+                    </div>
                     <p>{main.description2}</p>
-                  </div>
-                  <div className="column is-5">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main2.image1} />
-                    </article>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/contact" style={{}}>
-                      LINK TEXT
-                    </Link>
                   </div>
                 </div>
               </div>
+              <div className="columns">
+                  <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="/contact" style={{}}>
+                     Contact us
+                    </Link>
+                  </div>
+                </div>
               <div style={sectionStyle}>
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column is-7">
                     <h3 className="has-text-weight-semibold is-size-3">
                       {main2.heading}
                     </h3>
                     <p>{main2.description}</p>
-                    <Features gridItems={main2.blurbs} config={{rows: 4}} />
+                    <div className="column is-7">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main2.image1} />
+                      </article>
+                    </div>
                     <p>{main2.description2}</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/contact" style={{marginTop:50}}>
-                    LINK TEXT
-                    </Link>
                   </div>
                 </div>
               </div>
+              <div className="columns">
+                  <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="/contact" style={{}}>
+                     Contact us
+                    </Link>
+                  </div>
+                </div>
               <div style={sectionStyle}>
                 <div className="columns">
                   <div className="column is-12">
@@ -109,7 +113,7 @@ export const ProductPageTemplate = ({
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/contact">
-                    LINK TEXT
+                    Contact us
                     </Link>
                   </div>
                 </div>
@@ -143,7 +147,6 @@ ProductPageTemplate.propTypes = {
     heading: PropTypes.string,
     description: PropTypes.string,
     description2: PropTypes.string,
-    blurbs: PropTypes.array,
     image1: PropTypes.oneOfType ([PropTypes.object, PropTypes.string]),
   }),
   main3: PropTypes.shape ({
@@ -219,32 +222,31 @@ export const productPageQuery = graphql`
           heading
           description
           description2
+          image1 {
+            image {
+              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
+              }
+            }
+          }
+          image2 {
+            image {
+              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
+              }
+            }
+          }
         }
         main2 {
           heading
           description
           description2
           image1 {
-                       image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          blurbs {
             image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
               }
             }
-            text
           }
         }
-                main3 {
+        main3 {
           heading
           description
           blurbs1heading

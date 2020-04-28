@@ -10,7 +10,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
             <WaveSection>
       <h2 className="has-text-weight-bold main-header center-text">
-        Seneste Nyheder
+        News
       </h2>
     </WaveSection>
         <section className="section">

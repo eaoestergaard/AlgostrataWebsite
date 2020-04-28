@@ -27,21 +27,21 @@ export const IndexPageTemplate = ({
           to="/about"
           style={{marginRight: 15}}
         >
-          LINK1
+          Vision
         </Link>
         <Link
           className="button is-white  is-outlined wave-button"
           to="/products"
           style={{marginRight: 15}}
         >
-          LINK2
+          Products
         </Link>
         <Link
           className="button is-white  is-outlined wave-button"
           to="/contact"
           style={{}}
         >
-          LINK3
+          Contact
         </Link>
       </div>
     </WaveSection>
@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
                   gridItems={intro.blurbs}
                   config={{headerAlignTop: true, height: 250}}
                 />
-                <div className="columns">
+               {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       LINK TITLE
@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Seneste Nyheder
+                     News
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
@@ -81,7 +81,7 @@ export const IndexPageTemplate = ({
                       LINK TITLE
                     </Link>
                   </div>
-                </div>
+</div>*/}
               </div>
             </div>
           </div>

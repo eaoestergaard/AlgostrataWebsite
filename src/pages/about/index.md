@@ -1,11 +1,23 @@
 ---
 templateKey: about-page
-title: PAGE TITLE
+title: About Algostrata
 ---
-### HIGLIGHTED TEXT
+AlgoStrata builds api services for the financial industry
 
-Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut. Semper rutrum aliquam arcu sociosqu molestie, velit nunc quis mauris. Eget maecenas molestie libero at massa fringilla, cum ut suspendisse cum ultrices bibendum. Integer ultrices vivamus, arcu lectus aptent erat, lacinia amet cursus blandit eu mi. Fermentum vulputate maecenas faucibus, eu nunc qui libero mi quisque enim, quisque at, dui dui inventore justo faucibus dui. Torquent in quo ante, purus ornare non, lorem cras nam sed venenatis non necessitatibus. Tortor et, sed mauris a leo, vitae sollicitudin interdum. Justo enim justo in, semper sed lorem interdum proin, fusce turpis fusce id praesent magna, ac interdum sodales, arcu orci eu suspendisse. Nibh laoreet eget mauris error, sed urna aut ac tincidunt. Risus amet ut lobortis ante vivamus, eget euismod enim at quam urna lacus.
+* Portfolio construction
+* Risk analyzer
+* Signal analyzer
+* Investement strategy testing
+* Porfolio cost breakdown
+* Reporting tools
 
-Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut. Semper rutrum aliquam arcu sociosqu molestie, velit nunc quis mauris. Eget maecenas molestie libero at massa fringilla, cum ut suspendisse cum ultrices bibendum. Integer ultrices vivamus, arcu lectus aptent erat, lacinia amet cursus blandit eu mi. Fermentum vulputate maecenas faucibus, eu nunc qui libero mi quisque enim, quisque at, dui dui inventore justo faucibus dui. Torquent in quo ante, purus ornare non, lorem cras nam sed venenatis non necessitatibus. Tortor et, sed mauris a leo, vitae sollicitudin interdum. Justo enim justo in, semper sed lorem interdum proin, fusce turpis fusce id praesent magna, ac interdum sodales, arcu orci eu suspendisse. Nibh laoreet eget mauris error, sed urna aut ac tincidunt. Risus amet ut lobortis ante vivamus, eget euismod enim at quam urna lacus. 
+# The vision behind Algostrata
 
-Justo enim justo in, semper sed lorem interdum proin, fusce turpis fusce id praesent magna, ac interdum sodales, arcu orci eu suspendisse. Nibh laoreet eget mauris error, sed urna aut ac tincidunt. Risus amet ut lobortis ante vivamus, eget euismod enim at quam urna lacus. 
+### Open
+We believe that research results should be made easily available to use in practice. We invite students, researchers and investment specialists to co-create AlgoStrata with us. In parallel, we will start an open source project with a library of methods in asset allocation.
+
+### User friendly
+We believe investment is relevant for everyone. So by striving to have maximum ease of use, we would like to invite as many people as possible to use AlgoStrata, make their own investment strategies, or test existing ones.  
+
+### Collaborative
+We believe that a close collaboration between academia and industry generates innovation and offers the society at large great value. By creating AlgoStrata we aim at bridging the gap between investment researchers and fund managers or investment specialists. 
