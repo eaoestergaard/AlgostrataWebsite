@@ -23,47 +23,42 @@ main:
   description: >
     The portfolio builder is an advances tool for building ETF portfolios. 
   description2: >  
-     And its cool
+     Via the portfolio builder you can easily build a multi layered quantitative investment strategy and test it against several benchmarks.
   image1:
-    alt: Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut.
-    image: /img/funnel1.png  
+    alt: The layers of filters in the portfolio builder
+    image: /img/funnel2.PNG  
   image2:
     alt: Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut.
-    image: /img/funnel1.png
+    image: /img/funnel3.PNG
 main2:
   heading: Signal Analyzer
   description: >
     The portfolio builder is an advances tool for building ETF portfolios. 
   description2: >  
-     And its cool     
+         
   image1:
     alt: Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut.
-    image: /img/funnel1.png  
+    image: /img/signalAnalyzer.jpg  
 main3:
   heading: Portfolio Cost Calculator 
   description: >
-    Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut.Orci non venenatis quis, lorem nibh malesuada integer et ligula eum, quis lorem blandit nulla, pretium phasellus, luctus vivamus diam sed consectetuer ut.
+     
   blurbs1heading: >
      
   blurbs1:
-    - image: /img/default.png
+    - image: /img/costBreakDown1.jpg
       text: >-
-        Neque eget fusce sit quis suscipit ornare, nibh luctus sed ultricies luctus justo dignissim, condimentum ut nonummy turpis diam wisi sapien. 
+        In depth calculation of portfolio cost
         
-    - image: /img/default.png
-      text: >-
-      
-    - image: /img/default.png
-      text: >
-        Neque eget fusce sit quis suscipit ornare, nibh luctus sed ultricies luctus justo dignissim, condimentum ut nonummy turpis diam wisi sapien. 
+       
   blurbs2heading: >
     Consultancy services
   blurbs2:
-    - image: /img/default.png
+    - image: /img//consultant1.jpg
       text: >
-        Integrating our services into your system.
-    - image: /img/default.png
-      text: >-
-        Help building the tool you need. 
+        Integrating our services in your system.
+    - image: /img//consultant2.jpg
+      text: >
+        Building the tools you need.
 ---
 

@@ -49,10 +49,10 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-1 is-offset-1">
               <div className="content">
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column is-1">
                              <h3 className="has-text-weight-semibold is-size-2">
                         {heading}
                       </h3>
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <Features
                   gridItems={intro.blurbs}
-                  config={{headerAlignTop: true, height: 250}}
+                  config={{headerAlignTop: true,height:50, width: 850}}
                 />
                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -146,7 +146,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1200, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

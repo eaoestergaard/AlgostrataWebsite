@@ -30,12 +30,12 @@ const Footer = class extends React.Component {
                         Product
                       </Link>
                     </li>
-                    <li>
+                    {/*<li>
                       <Link className="navbar-item" to="/products">
                         Services
                       </Link>
-                    </li>
-                    <li>
+                    </li>*}
+                   {/* <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -44,7 +44,7 @@ const Footer = class extends React.Component {
                       >
                         Admin
                       </a>
-                    </li>
+                   </li>*/}
                   </ul>
                 </section>
               </div>

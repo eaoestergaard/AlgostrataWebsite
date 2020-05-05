@@ -23,7 +23,7 @@ export const ProductPageTemplate = ({
 }) => (
   <div className="content">
     <WaveSection>
-      <h2 className="has-text-weight-bold main-header center-text">
+      <h2 className="has-text-weight-bold main-header center-text is-size-1">
         {title}
       </h2>
     </WaveSection>
@@ -31,31 +31,25 @@ export const ProductPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-7 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
-            </div>
           </div>
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-10 is-offsetoffset-1">
               <div style={sectionStyle}>
                 <div className="columns">
-                  <div className="column is-7">
+                  <div className="column is-10">
                     <h3 className="has-text-weight-semibold is-size-3">
                       {main.heading}
                     </h3>
                     <p>{main.description}</p>
-                    <div className="column is-7">
-                      <article className="tile is-child">
+                    <article className="tile is-child">
                         <PreviewCompatibleImage imageInfo={main.image1} />
                       </article>
-                    </div>
-                    <div className="column is-7">
-                      <article className="tile is-child">
+                    <p>{main.description2}</p>
+                    <article className="tile is-child">
                         <PreviewCompatibleImage imageInfo={main.image2} />
                       </article>
-                    </div>
-                    <p>{main.description2}</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -77,11 +71,9 @@ export const ProductPageTemplate = ({
                       {main2.heading}
                     </h3>
                     <p>{main2.description}</p>
-                    <div className="column is-7">
                       <article className="tile is-child">
                         <PreviewCompatibleImage imageInfo={main2.image1} />
                       </article>
-                    </div>
                     <p>{main2.description2}</p>
                   </div>
                 </div>
@@ -103,11 +95,11 @@ export const ProductPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-3">
                       {main3.heading}
                     </h3>
-                    <p>{main3.description}</p>
-                    <h4 style={{marginTop: 20}}>{main3.blurbs1heading}</h4>
-                    <Features gridItems={main3.blurbs1} config={{rows: 4}} />
-                    <h4>{main3.blurbs2heading}</h4>
-                    <Features gridItems={main3.blurbs2} config={{height:250}} />
+                    <h3 className="has-text-weight-semibold is-size-3">{main3.description}</h3>
+                    <h3 style={{marginTop: 20}}>{main3.blurbs1heading}</h3>
+                    <Features gridItems={main3.blurbs1} config={{width:500}} />
+                    <h3 className="has-text-weight-semibold is-size-3 ">{main3.blurbs2heading}</h3>
+                    <Features gridItems={main3.blurbs2} config={{width:500}} />
                   </div>
                 </div>
                 <div className="columns">
@@ -224,13 +216,13 @@ export const productPageQuery = graphql`
           description2
           image1 {
             image {
-              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
+              childImageSharp {fluid(maxWidth: 1600, quality: 100) {...GatsbyImageSharpFluid}
               }
             }
           }
           image2 {
             image {
-              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
+              childImageSharp {fluid(maxWidth: 1600, quality: 100) {...GatsbyImageSharpFluid}
               }
             }
           }
@@ -241,7 +233,7 @@ export const productPageQuery = graphql`
           description2
           image1 {
             image {
-              childImageSharp {fluid(maxWidth: 240, quality: 64) {...GatsbyImageSharpFluid}
+              childImageSharp {fluid(maxWidth: 1600, quality: 100) {...GatsbyImageSharpFluid}
               }
             }
           }
@@ -254,7 +246,7 @@ export const productPageQuery = graphql`
           blurbs1 {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1600, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -264,7 +256,7 @@ export const productPageQuery = graphql`
           blurbs2 {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1600, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
