@@ -99,7 +99,7 @@ export const teamPageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 240, quality: 64, grayscale: true) {
                   ...GatsbyImageSharpFluid
                 }
               }

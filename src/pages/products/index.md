@@ -21,7 +21,7 @@ intro:
 main:
   heading: Portfolio Builder
   description: >
-    The portfolio builder is an advances tool for building ETF portfolios. 
+    The portfolio builder is an advanced tool for building ETF portfolios. 
   description2: >  
      Via the portfolio builder you can easily build a multi layered quantitative investment strategy and test it against several benchmarks.
   image1:
@@ -33,7 +33,7 @@ main:
 main2:
   heading: Signal Analyzer
   description: >
-    The portfolio builder is an advances tool for building ETF portfolios. 
+     
   description2: >  
          
   image1:
