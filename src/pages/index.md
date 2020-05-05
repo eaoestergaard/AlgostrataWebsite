@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: We build smart filtering tools for asset allocation
-heading: API toolbox for for investment and asset allocation 
+heading: API toolbox for investment and asset allocation 
 mainpitch:
   description: |
     DESCRIPTION
